@@ -1,0 +1,222 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            &lt;/&gt;
+        </div>
+
+        <div>
+            <h1>Website Builder</h1>
+            <p>Turn your idea into a website ✨</p>
+        </div>
+    </header>
+
+
+    <main class="builder">
+
+        <!-- SETTINGS -->
+        <section class="settings">
+
+            <h2>Build your website</h2>
+
+            <!-- Website Type -->
+            <div class="option">
+                <label>Choose website type</label>
+
+                <div class="types">
+                    <button class="type active">Portfolio</button>
+                    <button class="type">Store</button>
+                    <button class="type">Restaurant</button>
+                    <button class="type">Business</button>
+                </div>
+            </div>
+
+
+            <!-- Website Name -->
+            <div class="option">
+                <label for="websiteName">Website name</label>
+
+                <input
+                    type="text"
+                    id="websiteName"
+                    placeholder="My Portfolio"
+                >
+            </div>
+
+
+            <!-- Colors -->
+            <div class="option">
+                <label>Choose your color</label>
+
+                <div class="colors">
+                    <button class="color purple"></button>
+                    <button class="color pink"></button>
+                    <button class="color blue"></button>
+                    <button class="color green"></button>
+                    <button class="color orange"></button>
+                </div>
+            </div>
+
+
+            <!-- Font -->
+            <div class="option">
+                <label for="font">Choose your font</label>
+
+                <select id="font">
+                    <option>Poppins</option>
+                    <option>Arial</option>
+                    <option>Georgia</option>
+                    <option>Verdana</option>
+                </select>
+            </div>
+
+
+            <!-- Sections -->
+            <div class="option">
+                <label>Choose your sections</label>
+
+                <div class="sections">
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Home
+                    </label>
+
+                    <label>
+                        <input type="checkbox" checked>
+                        About
+                    </label>
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Projects
+                    </label>
+
+                    <label>
+                        <input type="checkbox" checked>
+                        Contact
+                    </label>
+
+                </div>
+            </div>
+
+
+            <button class="generate">
+                ✨ Generate Website
+            </button>
+
+        </section>
+
+
+        <!-- LIVE PREVIEW -->
+        <section class="preview">
+
+            <div class="preview-header">
+                <h2>👁 Live Preview</h2>
+                <span>This is your website</span>
+            </div>
+
+
+            <div class="website-preview">
+
+                <nav>
+                    <h2 id="previewName">My Portfolio</h2>
+
+                    <div class="nav-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </nav>
+
+
+                <section class="hero" id="home>
+
+                    <div class="hero-text">
+
+                        <p>Hello, I'm</p>
+
+                        <h1>Asmaa</h1>
+
+                        <h3>Web Developer & Creative Thinker</h3>
+ <p>
+                            I create beautiful and functional
+                            websites using HTML, CSS and JavaScript.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <button>View My Projects</button>
+                            <button>Contact Me</button>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-icon">
+                        &lt;/&gt;
+                    </div>
+
+                </section>
+
+
+                <section class="about" id="about>
+
+                    <h2>About <span>Me</span></h2>
+
+                    <p>
+                        I'm a passionate web developer who loves
+                        creating simple and beautiful websites.
+                    </p>
+
+                </section>
+
+
+                <section class="projects" id="projects>
+
+                    <h2>My <span>Projects</span></h2>
+<section class="contact" id="contact">
+    <h2>Contact <span>Me</span></h2>
+    <p>Let's create something amazing together ✨</p>
+</section>
+                    <div class="project-cards">
+
+                        <div class="card">
+                            <div class="card-image">☀️</div>
+                            <h3>Weather App</h3>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">✓</div>
+                            <h3>To-Do List</h3>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">&lt;/&gt;</div>
+                            <h3>Landing Page</h3>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

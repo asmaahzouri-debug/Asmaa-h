@@ -1,0 +1,483 @@
+ /* =========================
+   GENERAL
+========================= */
+:root {
+    --main-color: #7c5cff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5ff;
+    color: #24213a;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 30px;
+    background: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:var(--main-color)
+    color: white;
+
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.header p {
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* =========================
+   BUILDER
+========================= */
+
+.builder {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   SETTINGS & PREVIEW CARDS
+========================= */
+
+.settings,
+.preview {
+    background: white;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.settings {
+    flex: 0 0 320px;
+}
+
+.preview {
+    flex: 1;
+}
+
+
+/* =========================
+   SETTINGS CONTENT
+========================= */
+
+.settings h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.option {
+    margin-bottom: 22px;
+}
+
+.option > label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   WEBSITE TYPES
+========================= */
+
+.types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.type {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.type.active {
+    background:var(--main-color)
+    color: white;
+    border-color:var(--main-color)
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+#websiteName,
+#font {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+#websiteName:focus,
+#font:focus {
+    border-color: #7c5cff;
+}
+
+
+/* =========================
+   COLORS
+========================= */
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px #ddd;
+}
+
+.purple {
+    background: #7c5cff;
+}
+
+.pink {
+    background: #ff6fae;
+}
+
+.blue {
+    background: #4d96ff;
+}
+
+.green {
+    background: #4caf50;
+}
+
+.orange {
+    background: #ff9f43;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sections label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.sections input {
+    accent-color:var(--main-color)
+}
+
+
+/* =========================
+   GENERATE BUTTON
+========================= */
+
+.generate {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+
+    background:var(--main-color)
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.generate:hover {
+    background: #6848ed;
+}
+
+
+/* =========================
+   PREVIEW HEADER
+========================= */
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.preview-header h2 {
+    font-size: 20px;
+}
+
+.preview-header span {
+    font-size: 13px;
+    color: #888;
+}
+
+
+/* =========================
+   WEBSITE PREVIEW
+========================= */
+
+.website-preview {
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    background: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.website-preview nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 25px;
+    border-bottom: 1px solid #eee;
+}
+ .website-preview nav h2 {
+    color:var(--main-color)
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 50px;
+    background: #f8f6ff;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text > p:first-child {
+    color:var(--main-color)
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 8px 0;
+}
+
+.hero h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hero-buttons button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background:var(--main-color)
+    color: white;
+    cursor: pointer;
+}
+
+.hero-buttons button:last-child {
+    background: white;
+    color:var(--main-color)
+    border: 1px solid var(--main-color)
+}
+
+.hero-icon {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7c5cff;
+    color: white;
+
+    border-radius: 35px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2,
+.projects h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about span,
+.projects span {
+    color:var(--main-color)
+}
+
+.about p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    padding: 50px;
+    background: #faf9ff;
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    padding: 20px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card-image {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f0edff;
+    border-radius: 14px;
+
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .builder {
+        flex-direction: column;
+    }
+
+    .settings {
+        flex: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 25px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .website-preview nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
